@@ -1,0 +1,16 @@
+k
+`D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\FantasyWebApp.RazorAssemblyInfo.csutf-8f
+[D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\FantasyWebApp.AssemblyInfo.csutf-8w
+lD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8h
+]D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\FantasyWebApp.GlobalUsings.g.csutf-8@
+7D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Program.csutf-8M
+DD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Privacy.cshtml.csutf-8S
+JD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Players\Index.cshtml.csutf-8R
+ID:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Players\Edit.cshtml.csutf-8U
+LD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Players\Details.cshtml.csutf-8T
+KD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Players\Delete.cshtml.csutf-8T
+KD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Players\Create.cshtml.csutf-8K
+BD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Index.cshtml.csutf-8K
+BD:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Pages\Error.cshtml.csutf-8F
+=D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Models\Player.csutf-8N
+ED:\PipeLine_proj\FantasyWebApp\FantasyWebApp\Data\PlayerRepository.csutf-8

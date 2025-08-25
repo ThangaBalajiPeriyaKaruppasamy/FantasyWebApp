@@ -31,4 +31,3 @@ D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\FantasyWebApp.pdb
 D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\FantasyWebApp.genruntimeconfig.cache
 D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\ref\FantasyWebApp.dll
 D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\FantasyWebApp.sourcelink.json
-D:\PipeLine_proj\FantasyWebApp\FantasyWebApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
