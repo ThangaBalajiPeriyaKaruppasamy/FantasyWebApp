@@ -1,0 +1,39 @@
+@page
+@model FantasyCricketApp.Pages.Players.IndexModel
+@{
+    ViewData["Title"] = "Players";
+}
+
+<h1>Player List</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New Player</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Team</th>
+            <th>Role</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model.Players)
+    {
+        <tr>
+            <td>@p.Name</td>
+            <td>@p.Team</td>
+            <td>@p.Role</td>
+            <td>@p.Price</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@p.Id">Edit</a> |
+                <a asp-page="Details" asp-route-id="@p.Id">Details</a> |
+                <a asp-page="Delete" asp-route-id="@p.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

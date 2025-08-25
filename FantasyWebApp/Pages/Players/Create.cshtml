@@ -1,0 +1,36 @@
+@page
+@model FantasyCricketApp.Pages.Players.CreateModel
+@{
+    ViewData["Title"] = "Create Player";
+}
+
+<h1>Create New Player</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Player.Name"></label>
+        <input asp-for="Player.Name" class="form-control" />
+        <span asp-validation-for="Player.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Player.Team"></label>
+        <input asp-for="Player.Team" class="form-control" />
+        <span asp-validation-for="Player.Team" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Player.Role"></label>
+        <input asp-for="Player.Role" class="form-control" />
+        <span asp-validation-for="Player.Role" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Player.Price"></label>
+        <input asp-for="Player.Price" class="form-control" />
+        <span asp-validation-for="Player.Price" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,23 @@
+@page "{id:int}"
+@model FantasyCricketApp.Pages.Players.DetailsModel
+@{
+    ViewData["Title"] = "Player Details";
+}
+
+<h1>Player Details</h1>
+
+<dl class="row">
+    <dt class="col-sm-2">Name</dt>
+    <dd class="col-sm-10">@Model.Player.Name</dd>
+    <dt class="col-sm-2">Team</dt>
+    <dd class="col-sm-10">@Model.Player.Team</dd>
+    <dt class="col-sm-2">Role</dt>
+    <dd class="col-sm-10">@Model.Player.Role</dd>
+    <dt class="col-sm-2">Price</dt>
+    <dd class="col-sm-10">@Model.Player.Price</dd>
+</dl>
+
+<p>
+    <a asp-page="Edit" asp-route-id="@Model.Player.Id" class="btn btn-primary">Edit</a>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+</p>
