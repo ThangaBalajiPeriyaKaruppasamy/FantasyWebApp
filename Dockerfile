@@ -2,26 +2,30 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy csproj and restore dependencies
+# Copy solution and project files
 COPY *.sln .
-COPY FantasyCricketApp/*.csproj ./FantasyCricketApp/
-RUN dotnet restore
+COPY FantasyWebApp/*.csproj ./FantasyWebApp/
 
-# Copy everything else and publish
-COPY FantasyCricketApp/. ./FantasyCricketApp/
-WORKDIR /src/FantasyCricketApp
+# Restore dependencies for the entire solution
+RUN dotnet restore FantasyWebApp.sln
+
+# Copy the rest of your source code
+COPY . .
+
+# Publish the FantasyWebApp project
+WORKDIR /src/FantasyWebApp
 RUN dotnet publish -c Release -o /app/publish
 
 # 2. Runtime Stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
-# Copy published output
+# Copy published output from the build stage
 COPY --from=build /app/publish ./
 
-# Expose port and configure the app to listen on it
+# Expose port and configure ASP.NET Core
 EXPOSE 80
 ENV ASPNETCORE_URLS=http://+:80
 
-# Entrypoint to run the application
-ENTRYPOINT ["dotnet", "FantasyCricketApp.dll"]
+# Entry point for the container
+ENTRYPOINT ["dotnet", "FantasyWebApp.dll"]
